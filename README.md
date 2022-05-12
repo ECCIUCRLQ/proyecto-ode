@@ -8,7 +8,7 @@ Este proyecto utiliza la herramienta [Simics](https://www.intel.com/content/www/
 ## 🗃️ Tabla de contenidos
 - [Guía de compilación](#-guía-de-compilación)
 - [Como usarlo](#-como-usarlo)
-- [Funcionalidad básica](#-funcionalidad-básica)
+- [Funcionalidades básicas](#-funcionalidades-básicas)
 - [Diseño](#-diseño)
 - [Protocolo](#-protocolo)
 - [Cosas por hacer](#-cosas-por-hacer)
@@ -23,7 +23,7 @@ Por hacer...
 Por hacer...
 
 
-## 📷 Funcionalidad básica
+## 📷 Funcionalidades básicas
 Esta cámara virtual empleará el formato de archivo [BMP][1]. Por limitaciones del proyecto, la captura de fotografías se basará en tomar una imagen aleatoria preinstalada en el dispositivo y enviarla como resultado, ha esta se le podrán aplicar distintos [filtros](#filtros) para cambiar su apariencia, además de incluir metadatos de la imagen, como fecha de captura, tamaño, etc.
 
 ### Archivos BMP 🖼️
@@ -92,6 +92,7 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
   Este filtro quita el color a las fotos.
 </details>
 
+> Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
 
 ## 🎨 Diseño
 ![alt text](https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/dise%C3%B1o.png)
@@ -113,9 +114,12 @@ Es la forma en la que comunica el dispositivo con el driver, se implementará se
 - [ ] Protocolo
 
 ## Habilidades y conocimientos necesarios
-- Procesamiento de imágenes.
-- Especificaciones y estructura de los archivos BMP
-- ...
+- Adquirir facilidad de programar en lenguaje ensamblador.
+- Procesamiento y codificación de imágenes.
+- Especificaciones y estructura de los archivos BMP.
+- Mejor manipulación de Simics para adquirir comodidad al utilizarlo.
+- Experiencia en desarrollo de aplicaciones que mezclen código de alto nivel con lenguaje ensamblador.
+- Tener una mejor comprensión de la estructura PCI y su funcionamiento.
 
 ## 👤 Autores
 Oscar Quesada Webb
