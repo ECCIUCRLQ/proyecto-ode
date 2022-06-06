@@ -31,11 +31,11 @@ Esta cámara virtual empleará el formato de archivo [BMP](https://github.com/EC
 
 Estos son los filtros que  se le podrán aplicar a las fotos:
 
-[normal]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/imagen_referencia_normal.jpg "Imagen de referencia normal"
-[vintage]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/imagen_referencia_vintage.jpg "Imagen de referencia con filtro vintage"
-[blur]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/imagen_referencia_blur.jpg "Imagen de referencia con filtro blur"
-[negativo]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/imagen_referencia_negativo.jpg "Imagen de referencia con filtro negativo"
-[b&n]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/imagen_referencia_b%26w.jpg "Imagen de referencia con filtro blanco y negro"
+[normal]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_normal.jpg "Imagen de referencia normal"
+[vintage]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_vintage.jpg "Imagen de referencia con filtro vintage"
+[blur]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_blur.jpg "Imagen de referencia con filtro blur"
+[negativo]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_negativo.jpg "Imagen de referencia con filtro negativo"
+[b&n]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_b%26w.jpg "Imagen de referencia con filtro blanco y negro"
 
 <details>
   <summary>Vintage</summary>
@@ -76,7 +76,7 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
 > Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
 
 ## 🎨 Diseño
-![alt text](https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/dise%C3%B1o.png)
+![alt text](https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/dise%C3%B1o.png)
 
 
 El proyecto tiene distintos componentes que se interconectan entre ellos. El principal es el dispositivo que es una cámara, esta se conecta mediante PCI, ha algún computador, para que estos dos se puedan comunicar correctamente se necesita de un controlador. También es necesario de un programa que pueda utilizar el usuario para comunicarse con el dispositivo.
