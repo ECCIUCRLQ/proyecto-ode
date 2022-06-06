@@ -24,27 +24,8 @@ Por hacer...
 
 
 ## 📷 Funcionalidades básicas
-Esta cámara virtual empleará el formato de archivo [BMP][1]. Por limitaciones del proyecto, la captura de fotografías se basará en tomar una imagen aleatoria preinstalada en el dispositivo y enviarla como resultado, ha esta se le podrán aplicar distintos [filtros](#filtros) para cambiar su apariencia, además de incluir metadatos de la imagen, como fecha de captura, tamaño, etc.
 
-### Archivos BMP 🖼️
-Los archivos con formato [BMP][1] permiten guardar imagenes dentro de una computadora, estos poseen las siguientes estructuras[^1]:
-| Estructura          | Bytes correspondientes  |
-|:-------------------:|:-----------------------:|
-| BITMAPFILEHEADER    | 0x00 0x0D               |
-| BITMAPINFOHEADER    | 0x0E 0x35               |
-| Arreglo RGBQUAD     | 0x36 0x75               |
-| Arreglo Color-index | 0x76 0x275              |  
-
-
-1. **BITMAPFILEHEADER**: permite indentificar el tipo de archivo[^2] (están en [little-endian](https://www.techopedia.com/definition/12892/little-endian)).
-2. **BITMAPINFOHEADER**: contiene la información sobre las dimensiones y el formato de color[^3].
-3. **RGBQUAD**: provee la intensidad de los colores RGB[^2].
-4. **Color-index**: contenido de la imagen[^2].
-
-[^1]: Tomada de [Microsoft](https://docs.microsoft.com/en-us/windows/win32/gdi/bitmap-storage)
-[^2]: Tomado de [Fleformat](https://docs.fileformat.com/image/bmp/)
-[^3]: Tomado de [Microsoft](https://docs.microsoft.com/en-us/previous-versions//dd183376(v=vs.85))
-
+Esta cámara virtual empleará el formato de archivo [BMP](https://github.com/ECCIUCRLQ/proyecto-ode/wiki/Bitmap). Por limitaciones del proyecto, la captura de fotografías se basará en tomar una imagen aleatoria preinstalada en el dispositivo y enviarla como resultado, ha esta se le podrán aplicar distintos [filtros](https://github.com/ECCIUCRLQ/proyecto-ode/wiki/Dispositivo#filtros) para cambiar su apariencia, además de incluir metadatos de la imagen, como fecha de captura, tamaño, etc.
 
 ### Filtros 🪟
 
