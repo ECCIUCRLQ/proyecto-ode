@@ -9,7 +9,6 @@ Este proyecto utiliza la herramienta [Simics](https://www.intel.com/content/www/
 - [Guía de compilación](#-guía-de-compilación)
 - [Como usarlo](#-como-usarlo)
 - [Funcionalidades básicas](#-funcionalidades-básicas)
-- [Diseño](#-diseño)
 - [Protocolo](#-protocolo)
 - [Cosas por hacer](#-cosas-por-hacer)
 - [Autores, licencia](#-autores)
@@ -19,7 +18,7 @@ Este proyecto utiliza la herramienta [Simics](https://www.intel.com/content/www/
 Por hacer...
 
 
-## 🚀 Como usarlo
+## 🚀 Cómo usarlo
 Por hacer...
 
 
@@ -43,6 +42,8 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
 | ![alt text][normal] | ![alt text][vintage] |
 |:-------------------:|:--------------------:|
   
+> Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
+  
   El filtro vintage le da una apariencia antigua a las fotos.
 </details>
 
@@ -51,6 +52,8 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
   
 | ![alt text][normal] | ![alt text][blur] |
 |:-------------------:|:-----------------:|
+  
+> Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
   
   Este filtro genera un desenfoque artificial en toda la foto.
 </details>
@@ -61,6 +64,8 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
 | ![alt text][normal] | ![alt text][negativo] |
 |:-------------------:|:---------------------:|
   
+> Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
+  
   Con este filtro los blancos son tratados como negros y los negros como blancos.
 </details>
 
@@ -70,17 +75,11 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
 | ![alt text][normal] | ![alt text][b&n] |
 |:-------------------:|:----------------:|
   
-  Este filtro quita el color a las fotos.
-</details>
-
 > Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
-
-## 🎨 Diseño
-![alt text](https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/dise%C3%B1o.png)
-
-
-El proyecto tiene distintos componentes que se interconectan entre ellos. El principal es el dispositivo que es una cámara, esta se conecta mediante PCI, ha algún computador, para que estos dos se puedan comunicar correctamente se necesita de un controlador. También es necesario de un programa que pueda utilizar el usuario para comunicarse con el dispositivo.
-
+  
+  Este filtro quita el color a las fotos.
+  
+</details>
 
 ## 🧮 Protocolo
 Es la forma en la que comunica el dispositivo con el driver, se implementará según un consenso de la clase.
