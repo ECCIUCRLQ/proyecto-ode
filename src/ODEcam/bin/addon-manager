@@ -1,0 +1,5 @@
+#!/bin/bash
+# this file will be overwritten by the project setup script
+SIMICS_BASE_PACKAGE="/home/david/Desktop/Intel/Simics/simics-6.0.122"
+export SIMICS_BASE_PACKAGE
+exec "/home/david/Desktop/Intel/Simics/simics-6.0.122/bin/addon-manager" --project "/home/david/Documents/repos/proyecto-ode/src/ODEcam" "$@"
