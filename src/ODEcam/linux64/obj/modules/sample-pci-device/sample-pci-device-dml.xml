@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<device name="sample_pci_device" bitorder="le">
+  <bank name="pci_config" function="255">
+  </bank>
+  <bank name="reg" function="1">
+  </bank>
+</device>

@@ -1,2 +1,2 @@
 # Auto-generated file. Any changes will be overwritten!
-run-command-file "/home/david/Desktop/Intel/Simics/simics-6.0.122/targets/cosim/queues-in-cosimulator.simics"
+run-command-file "/home/david/simics/simics-6.0.128/targets/cosim/queues-in-cosimulator.simics"

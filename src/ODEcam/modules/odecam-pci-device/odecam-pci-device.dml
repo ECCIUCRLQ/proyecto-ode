@@ -70,7 +70,7 @@ attribute input
 	{
 		if(len > 0) {delete val;}
 		len = strlen(ptr);
-		val = new char(len + 1);
+		val = new char[len + 1];
 		strcpy(val, ptr);
 	}
 }
@@ -109,17 +109,17 @@ bank regs is function_mapped_bank {
 		param init_val = 0;
 		is write;
 		method write(uint64 value) {
-			local i = 0;
+			local int idx = 0;
 			if (value == 0x1) {
 				if (input.val != NULL)
 				{
 					file = fopen(input.val, "r");
 
 					// Buffer limited to 256 bytes
-					for(i = 0; i < 256; i++) 
+					for(idx = 0; idx < 256; idx++) 
 					{
 						local uint8 char2read = fgetc(file);
-						buffer[i].set_val(char2read);
+						buffer[idx].set_val(char2read);
 					}
 					fclose(file);
 				}
@@ -127,17 +127,17 @@ bank regs is function_mapped_bank {
 		}
 	}
 
-	register buffer[i < 256] size 1 @ 0x0018 {
+    /* ODEcam custom registers */
+    register device_state       @ 0x0018;
+    register filter_vintage     @ 0x001C;
+    register filter_blur        @ 0x0020;
+    register filter_negative    @ 0x0024;
+    register filter_blacknwhite @ 0x0028;
+
+	register buffer[i < 256] size 1 @ 0x002C + i {
 		is read;
 		param init_val = 0;
 	}
-
-    /* ODEcam custom registers */
-    register device_state       @ 0x1C;
-    register filter_vintage     @ 0x20;
-    register filter_blur        @ 0x24;
-    register filter_negative    @ 0x28;
-    register filter_blacknwhite @ 0x2C;
 }
 
 // end of odecam-pci-device.dml
