@@ -22,13 +22,13 @@ EXPORTED const char _module_capabilities_[] =
 	"API:" BUILD_API ";"
 	"BLD:" "0" ";"
 	"BLD_NS:__simics_project__;"
-	"BUILDDATE:" "1657819302" ";"
+	"BUILDDATE:" "1657893078" ";"
 	"MOD:" "odecam-pci-device" ";"
 	"CLS:odecam_pci_device" ";"
 	"HOSTTYPE:" "linux64" ";"
 	"THREADSAFE;"
 	EXTRA ";";
-EXPORTED const char _module_date[] = "Thu Jul 14 18:21:42 2022";
+EXPORTED const char _module_date[] = "Fri Jul 15 14:51:18 2022";
 extern void _initialize_odecam_pci_device_dml(void);
 extern void init_local(void) {}
 EXPORTED void _simics_module_init(void);

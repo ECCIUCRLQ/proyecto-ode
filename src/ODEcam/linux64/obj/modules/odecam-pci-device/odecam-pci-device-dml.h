@@ -461,8 +461,8 @@
 
 #undef DMLDIR_COMMON_H
 
-#define DMLDIR_ODECAM_PCI_DEVICE_H "/home/david/Desktop/repos/proyecto-ode/src/ODEcam/modules/odecam-pci-device/odecam-pci-device.h"
-#line 30 "/home/david/Desktop/repos/proyecto-ode/src/ODEcam/modules/odecam-pci-device/odecam-pci-device.dml"
+#define DMLDIR_ODECAM_PCI_DEVICE_H "/home/david/simics-projects/ODEcam/modules/odecam-pci-device/odecam-pci-device.h"
+#line 30 "/home/david/simics-projects/ODEcam/modules/odecam-pci-device/odecam-pci-device.dml"
 
 	#include <stdio.h>
 	#include <stdlib.h>
@@ -473,101 +473,101 @@
 
 #include "odecam-pci-device-dml-struct.h"
 
-typedef _traitref_t post_init;
-typedef _traitref_t init;
-typedef _traitref_t limitations;
 typedef _traitref_t name;
+typedef _traitref_t limitations;
 typedef _traitref_t documentation;
 typedef _traitref_t desc;
 typedef _traitref_t object;
-typedef _traitref_t device;
-typedef _traitref_t write_register;
-typedef _traitref_t shown_desc;
-typedef _traitref_t init_val;
-typedef _traitref_t _conf_attribute;
+typedef _traitref_t implement;
+typedef _traitref_t bank_transaction;
 typedef _traitref_t _qname;
-typedef _traitref_t _bitsize;
-typedef _traitref_t read_register;
-typedef _traitref_t set_val;
-typedef _traitref_t _set;
-typedef _traitref_t set;
+typedef _traitref_t shown_desc;
+typedef _traitref_t bank_io_memory;
+typedef _traitref_t bank;
+typedef _traitref_t init;
+typedef _traitref_t init_val;
 typedef _traitref_t get_val;
 typedef _traitref_t _get;
 typedef _traitref_t get;
+typedef _traitref_t set_val;
+typedef _traitref_t _set;
+typedef _traitref_t set;
+typedef _traitref_t _bitsize;
+typedef _traitref_t _conf_attribute;
+typedef _traitref_t read_register;
+typedef _traitref_t write_register;
 typedef _traitref_t _register;
 typedef _traitref_t write_field;
-typedef _traitref_t ignore_write;
-typedef _traitref_t power_on_reset;
-typedef _traitref_t _hard_reset;
-typedef _traitref_t _soft_reset;
-typedef _traitref_t no_reset;
-typedef _traitref_t silent_constant;
+typedef _traitref_t __write;
+typedef _traitref_t post_init;
+typedef _traitref_t device;
 typedef _traitref_t _lsb;
+typedef _traitref_t _set_field;
 typedef _traitref_t field;
+typedef _traitref_t _get_field;
+typedef _traitref_t read_field;
+typedef _traitref_t _reg_read_as_field;
+typedef _traitref_t _write_field;
+typedef _traitref_t _read_field;
+typedef _traitref_t _reg_write_as_field;
+typedef _traitref_t function_mapped_bank;
+typedef _traitref_t attribute;
+typedef _traitref_t uint64_attr;
+typedef _traitref_t __read;
+typedef _traitref_t function_io_memory;
+typedef _traitref_t _hard_reset;
+typedef _traitref_t port;
+typedef _traitref_t _init_val_hard_reset;
+typedef _traitref_t hreset;
+typedef _traitref_t _soft_reset;
+typedef _traitref_t _init_val_soft_reset;
+typedef _traitref_t sreset;
+typedef _traitref_t _maybe_provides_pci_bus_connect;
+typedef _traitref_t _reg_or_field;
+typedef _traitref_t read_only;
+typedef _traitref_t ignore_write;
 typedef _traitref_t map_params;
-typedef _traitref_t _no_base_address;
-typedef _traitref_t no_base_address_32;
+typedef _traitref_t base_address;
+typedef _traitref_t memory_base_address_generic;
+typedef _traitref_t memory_base_address_32;
+typedef _traitref_t providing_legacy_interrupts;
+typedef _traitref_t _connect;
+typedef _traitref_t interface;
+typedef _traitref_t providing_expansion_rom_connect;
+typedef _traitref_t pseudo_attr;
+typedef _traitref_t read_only_attr;
+typedef _traitref_t providing_pci_device_interface;
+typedef _traitref_t provides_pci_bus_connect;
+typedef _traitref_t pci_bus_connect;
+typedef _traitref_t pci_device_params;
+typedef _traitref_t providing_pci_bus_connect;
+typedef _traitref_t providing_dma_methods;
+typedef _traitref_t pci_common;
 typedef _traitref_t _simple_write;
 typedef _traitref_t write_1_clears;
-typedef _traitref_t base_address;
-typedef _traitref_t _pci_config_generic_command_reg;
-typedef _traitref_t __write;
 typedef _traitref_t read_only_custom_write;
-typedef _traitref_t read_field;
-typedef _traitref_t read_zero;
-typedef _traitref_t _reg_or_field;
+typedef _traitref_t power_on_reset;
+typedef _traitref_t no_reset;
 typedef _traitref_t constant;
-typedef _traitref_t unmapped;
-typedef _traitref_t implement;
-typedef _traitref_t bank_io_memory;
-typedef _traitref_t bank_transaction;
-typedef _traitref_t bank;
-typedef _traitref_t rbar_capable_bank;
-typedef _traitref_t __read;
+typedef _traitref_t read_zero;
+typedef _traitref_t _pci_config_generic_command_reg;
 typedef _traitref_t miss_pattern_bank;
+typedef _traitref_t unmapped;
+typedef _traitref_t rbar_capable_bank;
 typedef _traitref_t _pci_config_generic;
-typedef _traitref_t function_mapped_bank;
 typedef _traitref_t pci_config_generic;
 typedef _traitref_t _pci_config_type_0;
 typedef _traitref_t pci_config_type_0;
-typedef _traitref_t attribute;
-typedef _traitref_t interface;
-typedef _traitref_t _connect;
-typedef _traitref_t uint64_attr;
-typedef _traitref_t providing_expansion_rom_connect;
-typedef _traitref_t pci_device_params;
-typedef _traitref_t providing_legacy_interrupts;
-typedef _traitref_t pseudo_attr;
-typedef _traitref_t read_only_attr;
-typedef _traitref_t pci_bus_connect;
-typedef _traitref_t _maybe_provides_pci_bus_connect;
-typedef _traitref_t provides_pci_bus_connect;
-typedef _traitref_t providing_pci_bus_connect;
-typedef _traitref_t providing_pci_device_interface;
-typedef _traitref_t providing_dma_methods;
-typedef _traitref_t pci_common;
 typedef _traitref_t pci_device;
-typedef _traitref_t read_only;
-typedef _traitref_t _reg_write_as_field;
-typedef _traitref_t _reg_read_as_field;
-typedef _traitref_t _get_field;
-typedef _traitref_t _set_field;
-typedef _traitref_t _read_field;
-typedef _traitref_t _write_field;
-typedef _traitref_t _init_val_soft_reset;
-typedef _traitref_t port;
-typedef _traitref_t sreset;
-typedef _traitref_t _init_val_hard_reset;
-typedef _traitref_t hreset;
-typedef _traitref_t function_io_memory;
-typedef _traitref_t memory_base_address_generic;
-typedef _traitref_t memory_base_address_32;
 typedef _traitref_t pcie_device;
 typedef _traitref_t pci_mf_device;
 typedef _traitref_t pci_config_type_0_mf;
+typedef _traitref_t silent_constant;
 typedef _traitref_t pci_config_type_1;
 typedef _traitref_t memory_base_address_64;
 typedef _traitref_t io_base_address;
+typedef _traitref_t _no_base_address;
+typedef _traitref_t no_base_address_32;
 typedef _traitref_t no_base_address_64;
 typedef _traitref_t defining_empty_pcie_extended_conf_space;
 typedef _traitref_t providing_pcie_message_port;
@@ -862,8 +862,6 @@ typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset__memor
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___read_field___write_field__field__read__write;
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__ignore_write;
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___set_field___write_field__field__ignore_write;
-typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32;
-typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant;
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___reg_read_as_field___reg_write_as_field__read_zero__write;
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset__unmapped;
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset__register;
@@ -878,19 +876,11 @@ typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___reg_
 typedef _traitref_t __implicit__init_val_hard_reset___init_val_soft_reset___reg_write_as_field__read_only;
 
 
-struct _post_init {
-    _each_in_t _each_post_init;
-    void  (*post_init)(odecam_pci_device_t *arg0, post_init arg1);
-};
-struct _init {
-    _each_in_t _each_init;
-    void  (*init)(odecam_pci_device_t *arg0, init arg1);
+struct _name {
+    char const *name;
 };
 struct _limitations {
     uint8 _dummy;
-};
-struct _name {
-    char const *name;
 };
 struct _documentation {
     uint8 _dummy;
@@ -904,212 +894,20 @@ struct _object {
     struct _limitations limitations;
     struct _name name;
 };
-struct _device {
-    struct _init init;
+struct _implement {
     struct _object object;
-    struct _post_init post_init;
 };
-struct _write_register {
-    void  (*write_register)(odecam_pci_device_t *arg0, write_register arg1, uint64 arg2, uint64 arg3, void  *arg4);
+struct _bank_transaction {
+    struct _implement implement;
+};
+struct __qname {
+    char const *(*_qname)(odecam_pci_device_t *arg0, _qname arg1);
 };
 struct _shown_desc {
     struct _desc desc;
     char const *shown_desc;
 };
-struct _init_val {
-    struct _init init;
-    uint64 init_val;
-    void  (*_default_init)(odecam_pci_device_t *arg0, init_val arg1);
-};
-struct __conf_attribute {
-    struct _object object;
-};
-struct __qname {
-    char const *(*_qname)(odecam_pci_device_t *arg0, _qname arg1);
-};
-struct __bitsize {
-    uint8 bitsize;
-};
-struct _read_register {
-    uint64 (*read_register)(odecam_pci_device_t *arg0, read_register arg1, uint64 arg2, void  *arg3);
-};
-struct _set_val {
-    void  (*set_val)(odecam_pci_device_t *arg0, set_val arg1, uint64 arg2);
-    void  (*_default_set)(odecam_pci_device_t *arg0, set_val arg1, uint64 arg2);
-};
-struct __set {
-    struct _set_val set_val;
-    void  (*set)(odecam_pci_device_t *arg0, _set arg1, uint64 arg2);
-};
-struct _set {
-    struct __set _set;
-};
-struct _get_val {
-    uint64 (*get_val)(odecam_pci_device_t *arg0, get_val arg1);
-    uint64 (*_default_get)(odecam_pci_device_t *arg0, get_val arg1);
-};
-struct __get {
-    struct _get_val get_val;
-    uint64 (*get)(odecam_pci_device_t *arg0, _get arg1);
-};
-struct _get {
-    struct __get _get;
-};
-struct __register {
-    struct __bitsize _bitsize;
-    struct __conf_attribute _conf_attribute;
-    struct __qname _qname;
-    struct _get get;
-    struct _init_val init_val;
-    struct _read_register read_register;
-    struct _set set;
-    struct _shown_desc shown_desc;
-    struct _write_register write_register;
-    _each_in_t fields;
-    _each_in_t _get_fields;
-    _each_in_t _set_fields;
-    _each_in_t _read_fields;
-    _each_in_t _write_fields;
-    uint64 offset;
-    bool _le_byte_order;
-    bool _is_read_only;
-    bool mapped;
-    uint32 val;
-    uint64 (*read_unmapped_bits)(odecam_pci_device_t *arg0, _register arg1, uint64 arg2, void  *arg3);
-    void  (*write_unmapped_bits)(odecam_pci_device_t *arg0, _register arg1, uint64 arg2, uint64 arg3, void  *arg4);
-};
-struct _write_field {
-    void  (*write_field)(odecam_pci_device_t *arg0, write_field arg1, uint64 arg2, uint64 arg3, void  *arg4);
-};
-struct _ignore_write {
-    struct _write_field write_field;
-};
-struct _power_on_reset {
-    _each_in_t _each_power_on_reset;
-    void  (*power_on_reset)(odecam_pci_device_t *arg0, power_on_reset arg1);
-    void  (*_default_power_on_reset)(odecam_pci_device_t *arg0, power_on_reset arg1);
-};
-struct __hard_reset {
-    _each_in_t _each_hard_reset;
-    void  (*hard_reset)(odecam_pci_device_t *arg0, _hard_reset arg1);
-    void  (*_default_hard_reset)(odecam_pci_device_t *arg0, _hard_reset arg1);
-};
-struct __soft_reset {
-    _each_in_t _each_soft_reset;
-    void  (*soft_reset)(odecam_pci_device_t *arg0, _soft_reset arg1);
-    void  (*_default_soft_reset)(odecam_pci_device_t *arg0, _soft_reset arg1);
-};
-struct _no_reset {
-    struct __hard_reset _hard_reset;
-    struct _power_on_reset power_on_reset;
-    struct __soft_reset _soft_reset;
-};
-struct _silent_constant {
-    struct _ignore_write ignore_write;
-    struct _no_reset no_reset;
-};
-struct __lsb {
-    uint8 lsb;
-};
-struct _field {
-    struct __bitsize _bitsize;
-    struct __get _get;
-    struct __lsb _lsb;
-    struct __set _set;
-    struct _init_val init_val;
-    struct _object object;
-    struct _shown_desc shown_desc;
-    _register reg;
-};
-struct _map_params {
-    char const *map_type;
-    uint64 map_bit;
-    int64 map_func;
-};
-struct __no_base_address {
-    struct _map_params map_params;
-};
-struct _no_base_address_32 {
-    struct __no_base_address _no_base_address;
-    struct __register _register;
-};
-struct __simple_write {
-    struct _get_val get_val;
-    struct _set_val set_val;
-};
-struct _write_1_clears {
-    struct __simple_write _simple_write;
-    struct _write_field write_field;
-};
-struct _base_address {
-    struct _map_params map_params;
-    struct __register _register;
-    uint64 min_size_bits;
-    uint64 size_bits;
-    field _base;
-    _pci_config_generic_command_reg command;
-    _pci_config_generic parent_bank;
-    int (*pci_bar_size_bits)(odecam_pci_device_t *arg0, base_address arg1);
-    bool (*pci_mapping_enabled)(odecam_pci_device_t *arg0, base_address arg1);
-    conf_object_t *(*pci_mapping_object)(odecam_pci_device_t *arg0, base_address arg1);
-    conf_object_t *(*pci_mapping_target)(odecam_pci_device_t *arg0, base_address arg1);
-    void  (*pci_mapping_customize)(odecam_pci_device_t *arg0, base_address arg1, map_info_t *arg2);
-    uint64 (*pci_mapping_base)(odecam_pci_device_t *arg0, base_address arg1);
-    uint64 (*pci_mapping_length)(odecam_pci_device_t *arg0, base_address arg1);
-    uint64 (*get_base)(odecam_pci_device_t *arg0, base_address arg1);
-    void  (*remove_map)(odecam_pci_device_t *arg0, base_address arg1);
-    void  (*add_map)(odecam_pci_device_t *arg0, base_address arg1);
-    void  (*update_mapping)(odecam_pci_device_t *arg0, base_address arg1);
-};
-struct __pci_config_generic_command_reg {
-    field _io;
-    field _mem;
-    field _m;
-    field _sc;
-    field _mwi;
-    field _vga;
-    field _pe;
-    field _wc;
-    field _se;
-    field _fb;
-    field _id;
-};
-struct ___write {
-    struct __get _get;
-    struct __set _set;
-    struct _write_field write_field;
-    void  (*write)(odecam_pci_device_t *arg0, __write arg1, uint64 arg2);
-};
-struct _read_only_custom_write {
-    struct __register _register;
-    struct ___write __write;
-};
-struct _read_field {
-    uint64 (*read_field)(odecam_pci_device_t *arg0, read_field arg1, uint64 arg2, void  *arg3);
-};
-struct _read_zero {
-    struct _read_field read_field;
-};
-struct __reg_or_field {
-    bool is_register;
-};
-struct _constant {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct _get_val get_val;
-    struct _no_reset no_reset;
-    struct _write_field write_field;
-};
-struct _unmapped {
-    struct __register _register;
-};
-struct _implement {
-    struct _object object;
-};
 struct _bank_io_memory {
-    struct _implement implement;
-};
-struct _bank_transaction {
     struct _implement implement;
 };
 struct _bank {
@@ -1143,26 +941,339 @@ struct _bank {
     bool (*io_memory_access)(odecam_pci_device_t *arg0, bank arg1, generic_transaction_t *arg2, uint64 arg3, void  *arg4);
     exception_type_t (*transaction_access)(odecam_pci_device_t *arg0, bank arg1, transaction_t *arg2, uint64 arg3, void  *arg4);
 };
-struct _rbar_capable_bank {
+struct _init {
+    _each_in_t _each_init;
+    void  (*init)(odecam_pci_device_t *arg0, init arg1);
+};
+struct _init_val {
+    struct _init init;
+    uint64 init_val;
+    void  (*_default_init)(odecam_pci_device_t *arg0, init_val arg1);
+};
+struct _get_val {
+    uint64 (*get_val)(odecam_pci_device_t *arg0, get_val arg1);
+    uint64 (*_default_get)(odecam_pci_device_t *arg0, get_val arg1);
+};
+struct __get {
+    struct _get_val get_val;
+    uint64 (*get)(odecam_pci_device_t *arg0, _get arg1);
+};
+struct _get {
+    struct __get _get;
+};
+struct _set_val {
+    void  (*set_val)(odecam_pci_device_t *arg0, set_val arg1, uint64 arg2);
+    void  (*_default_set)(odecam_pci_device_t *arg0, set_val arg1, uint64 arg2);
+};
+struct __set {
+    struct _set_val set_val;
+    void  (*set)(odecam_pci_device_t *arg0, _set arg1, uint64 arg2);
+};
+struct _set {
+    struct __set _set;
+};
+struct __bitsize {
+    uint8 bitsize;
+};
+struct __conf_attribute {
+    struct _object object;
+};
+struct _read_register {
+    uint64 (*read_register)(odecam_pci_device_t *arg0, read_register arg1, uint64 arg2, void  *arg3);
+};
+struct _write_register {
+    void  (*write_register)(odecam_pci_device_t *arg0, write_register arg1, uint64 arg2, uint64 arg3, void  *arg4);
+};
+struct __register {
+    struct __bitsize _bitsize;
+    struct __conf_attribute _conf_attribute;
+    struct __qname _qname;
+    struct _get get;
+    struct _init_val init_val;
+    struct _read_register read_register;
+    struct _set set;
+    struct _shown_desc shown_desc;
+    struct _write_register write_register;
+    _each_in_t fields;
+    _each_in_t _get_fields;
+    _each_in_t _set_fields;
+    _each_in_t _read_fields;
+    _each_in_t _write_fields;
+    uint64 offset;
+    bool _le_byte_order;
+    bool _is_read_only;
+    bool mapped;
+    uint32 val;
+    uint64 (*read_unmapped_bits)(odecam_pci_device_t *arg0, _register arg1, uint64 arg2, void  *arg3);
+    void  (*write_unmapped_bits)(odecam_pci_device_t *arg0, _register arg1, uint64 arg2, uint64 arg3, void  *arg4);
+};
+struct _write_field {
+    void  (*write_field)(odecam_pci_device_t *arg0, write_field arg1, uint64 arg2, uint64 arg3, void  *arg4);
+};
+struct ___write {
+    struct __get _get;
+    struct __set _set;
+    struct _write_field write_field;
+    void  (*write)(odecam_pci_device_t *arg0, __write arg1, uint64 arg2);
+};
+struct _post_init {
+    _each_in_t _each_post_init;
+    void  (*post_init)(odecam_pci_device_t *arg0, post_init arg1);
+};
+struct _device {
+    struct _init init;
+    struct _object object;
+    struct _post_init post_init;
+};
+struct __lsb {
+    uint8 lsb;
+};
+struct __set_field {
+    struct __bitsize _bitsize;
+    struct __lsb _lsb;
+    struct _set set;
+};
+struct _field {
+    struct __bitsize _bitsize;
+    struct __get _get;
+    struct __lsb _lsb;
+    struct __set _set;
+    struct _init_val init_val;
+    struct _object object;
+    struct _shown_desc shown_desc;
+    _register reg;
+};
+struct __get_field {
+    struct __bitsize _bitsize;
+    struct __lsb _lsb;
+    struct _get get;
+};
+struct _read_field {
+    uint64 (*read_field)(odecam_pci_device_t *arg0, read_field arg1, uint64 arg2, void  *arg3);
+};
+struct __reg_read_as_field {
+    struct _read_field read_field;
+    struct __register _register;
+};
+struct __write_field {
+    struct __bitsize _bitsize;
+    struct __lsb _lsb;
+    struct _write_field write_field;
+};
+struct __read_field {
+    struct __bitsize _bitsize;
+    struct __lsb _lsb;
+    struct _read_field read_field;
+};
+struct __reg_write_as_field {
+    struct __register _register;
+    struct _write_field write_field;
+};
+struct _function_mapped_bank {
     struct _bank bank;
-    _each_in_t _rbar_control;
+    int function;
+};
+struct _attribute {
+    struct __conf_attribute _conf_attribute;
+    attr_value_t (*get)(odecam_pci_device_t *arg0, attribute arg1);
+    bool (*set)(odecam_pci_device_t *arg0, attribute arg1, attr_value_t arg2);
+};
+struct _uint64_attr {
+    struct _attribute attribute;
+    uint32 val;
 };
 struct ___read {
     struct __get _get;
     struct _read_field read_field;
     uint64 (*read)(odecam_pci_device_t *arg0, __read arg1);
 };
+struct _function_io_memory {
+    uint8 _dummy;
+};
+struct __hard_reset {
+    _each_in_t _each_hard_reset;
+    void  (*hard_reset)(odecam_pci_device_t *arg0, _hard_reset arg1);
+    void  (*_default_hard_reset)(odecam_pci_device_t *arg0, _hard_reset arg1);
+};
+struct _port {
+    struct __qname _qname;
+    struct _object object;
+    uint32 _cached_port_obj;
+};
+struct __init_val_hard_reset {
+    struct __hard_reset _hard_reset;
+    struct _init_val init_val;
+};
+struct _hreset {
+    struct __hard_reset _hard_reset;
+};
+struct __soft_reset {
+    _each_in_t _each_soft_reset;
+    void  (*soft_reset)(odecam_pci_device_t *arg0, _soft_reset arg1);
+    void  (*_default_soft_reset)(odecam_pci_device_t *arg0, _soft_reset arg1);
+};
+struct __init_val_soft_reset {
+    struct _init_val init_val;
+    struct __soft_reset _soft_reset;
+};
+struct _sreset {
+    struct __soft_reset _soft_reset;
+};
+struct __maybe_provides_pci_bus_connect {
+    uint8 _dummy;
+};
+struct __reg_or_field {
+    bool is_register;
+};
+struct _read_only {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct _get_val get_val;
+    struct _write_field write_field;
+};
+struct _ignore_write {
+    struct _write_field write_field;
+};
+struct _map_params {
+    char const *map_type;
+    uint64 map_bit;
+    int64 map_func;
+};
+struct _base_address {
+    struct _map_params map_params;
+    struct __register _register;
+    uint64 min_size_bits;
+    uint64 size_bits;
+    field _base;
+    _pci_config_generic_command_reg command;
+    _pci_config_generic parent_bank;
+    int (*pci_bar_size_bits)(odecam_pci_device_t *arg0, base_address arg1);
+    bool (*pci_mapping_enabled)(odecam_pci_device_t *arg0, base_address arg1);
+    conf_object_t *(*pci_mapping_object)(odecam_pci_device_t *arg0, base_address arg1);
+    conf_object_t *(*pci_mapping_target)(odecam_pci_device_t *arg0, base_address arg1);
+    void  (*pci_mapping_customize)(odecam_pci_device_t *arg0, base_address arg1, map_info_t *arg2);
+    uint64 (*pci_mapping_base)(odecam_pci_device_t *arg0, base_address arg1);
+    uint64 (*pci_mapping_length)(odecam_pci_device_t *arg0, base_address arg1);
+    uint64 (*get_base)(odecam_pci_device_t *arg0, base_address arg1);
+    void  (*remove_map)(odecam_pci_device_t *arg0, base_address arg1);
+    void  (*add_map)(odecam_pci_device_t *arg0, base_address arg1);
+    void  (*update_mapping)(odecam_pci_device_t *arg0, base_address arg1);
+};
+struct _memory_base_address_generic {
+    struct _base_address base_address;
+    field _type;
+};
+struct _memory_base_address_32 {
+    struct _memory_base_address_generic memory_base_address_generic;
+};
+struct _providing_legacy_interrupts {
+    uint8 _dummy;
+};
+struct __connect {
+    struct __conf_attribute _conf_attribute;
+    uint32 obj;
+    uint32 port;
+    bool (*validate)(odecam_pci_device_t *arg0, _connect arg1, conf_object_t *arg2);
+};
+struct _interface {
+    struct _object object;
+    bool _required;
+    uint32 val;
+};
+struct _providing_expansion_rom_connect {
+    uint8 _dummy;
+};
+struct _pseudo_attr {
+    struct _attribute attribute;
+};
+struct _read_only_attr {
+    struct _pseudo_attr pseudo_attr;
+};
+struct _providing_pci_device_interface {
+    uint8 _dummy;
+};
+struct _provides_pci_bus_connect {
+    struct __maybe_provides_pci_bus_connect _maybe_provides_pci_bus_connect;
+};
+struct _pci_bus_connect {
+    uint8 _dummy;
+};
+struct _pci_device_params {
+    uint8 _dummy;
+};
+struct _providing_pci_bus_connect {
+    struct _pci_device_params pci_device_params;
+    struct _provides_pci_bus_connect provides_pci_bus_connect;
+};
+struct _providing_dma_methods {
+    uint32 _tlp_prefix;
+};
+struct _pci_common {
+    struct _providing_dma_methods providing_dma_methods;
+    struct _providing_expansion_rom_connect providing_expansion_rom_connect;
+    struct _providing_legacy_interrupts providing_legacy_interrupts;
+    struct _providing_pci_bus_connect providing_pci_bus_connect;
+    struct _providing_pci_device_interface providing_pci_device_interface;
+};
+struct __simple_write {
+    struct _get_val get_val;
+    struct _set_val set_val;
+};
+struct _write_1_clears {
+    struct __simple_write _simple_write;
+    struct _write_field write_field;
+};
+struct _read_only_custom_write {
+    struct __register _register;
+    struct ___write __write;
+};
+struct _power_on_reset {
+    _each_in_t _each_power_on_reset;
+    void  (*power_on_reset)(odecam_pci_device_t *arg0, power_on_reset arg1);
+    void  (*_default_power_on_reset)(odecam_pci_device_t *arg0, power_on_reset arg1);
+};
+struct _no_reset {
+    struct __hard_reset _hard_reset;
+    struct _power_on_reset power_on_reset;
+    struct __soft_reset _soft_reset;
+};
+struct _constant {
+    struct __qname _qname;
+    struct __reg_or_field _reg_or_field;
+    struct _get_val get_val;
+    struct _no_reset no_reset;
+    struct _write_field write_field;
+};
+struct _read_zero {
+    struct _read_field read_field;
+};
+struct __pci_config_generic_command_reg {
+    field _io;
+    field _mem;
+    field _m;
+    field _sc;
+    field _mwi;
+    field _vga;
+    field _pe;
+    field _wc;
+    field _se;
+    field _fb;
+    field _id;
+};
 struct _miss_pattern_bank {
     struct _bank bank;
     uint8 miss_pattern;
 };
+struct _unmapped {
+    struct __register _register;
+};
+struct _rbar_capable_bank {
+    struct _bank bank;
+    _each_in_t _rbar_control;
+};
 struct __pci_config_generic {
     struct _miss_pattern_bank miss_pattern_bank;
     struct _rbar_capable_bank rbar_capable_bank;
-};
-struct _function_mapped_bank {
-    struct _bank bank;
-    int function;
 };
 struct _pci_config_generic {
     struct __pci_config_generic _pci_config_generic;
@@ -1175,132 +1286,8 @@ struct _pci_config_type_0 {
     struct __pci_config_type_0 _pci_config_type_0;
     struct _pci_config_generic pci_config_generic;
 };
-struct _attribute {
-    struct __conf_attribute _conf_attribute;
-    attr_value_t (*get)(odecam_pci_device_t *arg0, attribute arg1);
-    bool (*set)(odecam_pci_device_t *arg0, attribute arg1, attr_value_t arg2);
-};
-struct _interface {
-    struct _object object;
-    bool _required;
-    uint32 val;
-};
-struct __connect {
-    struct __conf_attribute _conf_attribute;
-    uint32 obj;
-    uint32 port;
-    bool (*validate)(odecam_pci_device_t *arg0, _connect arg1, conf_object_t *arg2);
-};
-struct _uint64_attr {
-    struct _attribute attribute;
-    uint32 val;
-};
-struct _providing_expansion_rom_connect {
-    uint8 _dummy;
-};
-struct _pci_device_params {
-    uint8 _dummy;
-};
-struct _providing_legacy_interrupts {
-    uint8 _dummy;
-};
-struct _pseudo_attr {
-    struct _attribute attribute;
-};
-struct _read_only_attr {
-    struct _pseudo_attr pseudo_attr;
-};
-struct _pci_bus_connect {
-    uint8 _dummy;
-};
-struct __maybe_provides_pci_bus_connect {
-    uint8 _dummy;
-};
-struct _provides_pci_bus_connect {
-    struct __maybe_provides_pci_bus_connect _maybe_provides_pci_bus_connect;
-};
-struct _providing_pci_bus_connect {
-    struct _pci_device_params pci_device_params;
-    struct _provides_pci_bus_connect provides_pci_bus_connect;
-};
-struct _providing_pci_device_interface {
-    uint8 _dummy;
-};
-struct _providing_dma_methods {
-    uint32 _tlp_prefix;
-};
-struct _pci_common {
-    struct _providing_dma_methods providing_dma_methods;
-    struct _providing_expansion_rom_connect providing_expansion_rom_connect;
-    struct _providing_legacy_interrupts providing_legacy_interrupts;
-    struct _providing_pci_bus_connect providing_pci_bus_connect;
-    struct _providing_pci_device_interface providing_pci_device_interface;
-};
 struct _pci_device {
     struct _pci_common pci_common;
-};
-struct _read_only {
-    struct __qname _qname;
-    struct __reg_or_field _reg_or_field;
-    struct _get_val get_val;
-    struct _write_field write_field;
-};
-struct __reg_write_as_field {
-    struct __register _register;
-    struct _write_field write_field;
-};
-struct __reg_read_as_field {
-    struct _read_field read_field;
-    struct __register _register;
-};
-struct __get_field {
-    struct __bitsize _bitsize;
-    struct __lsb _lsb;
-    struct _get get;
-};
-struct __set_field {
-    struct __bitsize _bitsize;
-    struct __lsb _lsb;
-    struct _set set;
-};
-struct __read_field {
-    struct __bitsize _bitsize;
-    struct __lsb _lsb;
-    struct _read_field read_field;
-};
-struct __write_field {
-    struct __bitsize _bitsize;
-    struct __lsb _lsb;
-    struct _write_field write_field;
-};
-struct __init_val_soft_reset {
-    struct _init_val init_val;
-    struct __soft_reset _soft_reset;
-};
-struct _port {
-    struct __qname _qname;
-    struct _object object;
-    uint32 _cached_port_obj;
-};
-struct _sreset {
-    struct __soft_reset _soft_reset;
-};
-struct __init_val_hard_reset {
-    struct __hard_reset _hard_reset;
-    struct _init_val init_val;
-};
-struct _hreset {
-    struct __hard_reset _hard_reset;
-};
-struct _function_io_memory {
-    uint8 _dummy;
-};
-struct _memory_base_address_generic {
-    struct _base_address base_address;
-    field _type;
-};
-struct _memory_base_address_32 {
-    struct _memory_base_address_generic memory_base_address_generic;
 };
 struct _pcie_device {
     struct _pci_device pci_device;
@@ -1312,6 +1299,10 @@ struct _pci_config_type_0_mf {
     struct __pci_config_generic _pci_config_generic;
     struct __pci_config_type_0 _pci_config_type_0;
 };
+struct _silent_constant {
+    struct _ignore_write ignore_write;
+    struct _no_reset no_reset;
+};
 struct _pci_config_type_1 {
     struct _pci_config_generic pci_config_generic;
 };
@@ -1320,6 +1311,13 @@ struct _memory_base_address_64 {
 };
 struct _io_base_address {
     struct _base_address base_address;
+};
+struct __no_base_address {
+    struct _map_params map_params;
+};
+struct _no_base_address_32 {
+    struct __no_base_address _no_base_address;
+    struct __register _register;
 };
 struct _no_base_address_64 {
     struct __no_base_address _no_base_address;
@@ -2321,18 +2319,6 @@ struct ___implicit__init_val_hard_reset___init_val_soft_reset___set_field___writ
     struct _field field;
     struct _ignore_write ignore_write;
 };
-struct ___implicit__init_val_hard_reset___init_val_soft_reset__no_base_address_32 {
-    struct __init_val_hard_reset _init_val_hard_reset;
-    struct __init_val_soft_reset _init_val_soft_reset;
-    struct _no_base_address_32 no_base_address_32;
-};
-struct ___implicit__init_val_hard_reset___init_val_soft_reset___write_field__field__silent_constant {
-    struct __init_val_hard_reset _init_val_hard_reset;
-    struct __init_val_soft_reset _init_val_soft_reset;
-    struct __write_field _write_field;
-    struct _field field;
-    struct _silent_constant silent_constant;
-};
 struct ___implicit__init_val_hard_reset___init_val_soft_reset___reg_read_as_field___reg_write_as_field__read_zero__write {
     struct __init_val_hard_reset _init_val_hard_reset;
     struct __init_val_soft_reset _init_val_soft_reset;
@@ -2452,21 +2438,6 @@ struct __devstruct_2odecam_pci_device_1pci_bus {
 struct __devstruct_2odecam_pci_device_1pci_config_2base_address_0 {
     uint64 val;
 };
-struct __devstruct_2odecam_pci_device_1pci_config_2base_address_1 {
-    uint64 val;
-};
-struct __devstruct_2odecam_pci_device_1pci_config_2base_address_2 {
-    uint64 val;
-};
-struct __devstruct_2odecam_pci_device_1pci_config_2base_address_3 {
-    uint64 val;
-};
-struct __devstruct_2odecam_pci_device_1pci_config_2base_address_4 {
-    uint64 val;
-};
-struct __devstruct_2odecam_pci_device_1pci_config_2base_address_5 {
-    uint64 val;
-};
 struct __devstruct_2odecam_pci_device_1pci_config_0bist {
     uint64 val;
 };
@@ -2543,11 +2514,6 @@ struct __devstruct_2odecam_pci_device_1pci_config {
     uint64 _reginfo_cache_size;
     _register *_sorted_regs;
     struct __devstruct_2odecam_pci_device_1pci_config_2base_address_0 base_address_0;
-    struct __devstruct_2odecam_pci_device_1pci_config_2base_address_1 base_address_1;
-    struct __devstruct_2odecam_pci_device_1pci_config_2base_address_2 base_address_2;
-    struct __devstruct_2odecam_pci_device_1pci_config_2base_address_3 base_address_3;
-    struct __devstruct_2odecam_pci_device_1pci_config_2base_address_4 base_address_4;
-    struct __devstruct_2odecam_pci_device_1pci_config_2base_address_5 base_address_5;
     struct __devstruct_2odecam_pci_device_1pci_config_0bist bist;
     struct __devstruct_2odecam_pci_device_1pci_config_1bus_address bus_address;
     struct __devstruct_2odecam_pci_device_1pci_config_2cache_line_size cache_line_size;

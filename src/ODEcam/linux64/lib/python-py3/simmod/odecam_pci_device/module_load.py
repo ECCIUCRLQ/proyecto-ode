@@ -7,6 +7,6 @@
 import cli
 import pci_common
 
-cli.new_info_command("sample_pci_device", pci_common.get_pci_info)
-cli.new_status_command("sample_pci_device", pci_common.get_pci_status)
-pci_common.new_pci_config_regs_command('sample_pci_device', None)
+cli.new_info_command("odecam_pci_device", pci_common.get_pci_info)
+cli.new_status_command("odecam_pci_device", pci_common.get_pci_status)
+pci_common.new_pci_config_regs_command('odecam_pci_device', None)

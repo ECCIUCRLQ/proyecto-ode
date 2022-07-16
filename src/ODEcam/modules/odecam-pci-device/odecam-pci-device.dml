@@ -81,17 +81,13 @@ bank pci_config {
     param base_address_registers = ["base_address_0"];
 
     register vendor_id { param init_val = 0x104C; } // Texas Instruments
-    register device_id { param init_val = 0xAC10; } // PC Card Controller
+    register device_id { param init_val = 0x0DEC; } // ODEcam device id is 0x0DEC
 
     register base_address_0 @ 0x10 is (memory_base_address_32) {
         param size_bits = 8;
         param map_func = 1;
     }
-    register base_address_1 @ 0x14 is (no_base_address_32);
-    register base_address_2 @ 0x18 is (no_base_address_32);
-    register base_address_3 @ 0x1C is (no_base_address_32);
-    register base_address_4 @ 0x20 is (no_base_address_32);
-    register base_address_5 @ 0x24 is (no_base_address_32);
+	
 }
 
 bank regs is function_mapped_bank {

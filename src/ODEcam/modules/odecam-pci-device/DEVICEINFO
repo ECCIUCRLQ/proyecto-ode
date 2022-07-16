@@ -1,2 +1,2 @@
-desc: Sample code showing how to write PCI device models
-name: Sample PCI Device
+desc: A virtual camera that applies filters to pictures taken.
+name: ODEcam PCI Device

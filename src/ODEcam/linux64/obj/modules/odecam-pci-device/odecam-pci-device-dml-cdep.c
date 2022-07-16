@@ -390,8 +390,8 @@
     #define convert_le64 CONVERT_LE64
 
 #undef DMLDIR_COMMON_H
-#define DMLDIR_ODECAM_PCI_DEVICE_H "/home/david/Desktop/repos/proyecto-ode/src/ODEcam/modules/odecam-pci-device/odecam-pci-device.h"
-#line 30 "/home/david/Desktop/repos/proyecto-ode/src/ODEcam/modules/odecam-pci-device/odecam-pci-device.dml"
+#define DMLDIR_ODECAM_PCI_DEVICE_H "/home/david/simics-projects/ODEcam/modules/odecam-pci-device/odecam-pci-device.h"
+#line 30 "/home/david/simics-projects/ODEcam/modules/odecam-pci-device/odecam-pci-device.dml"
 
 	#include <stdio.h>
 	#include <stdlib.h>

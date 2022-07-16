@@ -2,4 +2,4 @@
 # this file will be overwritten by the project setup script
 SIMICS_BASE_PACKAGE="/home/david/simics/simics-6.0.128"
 export SIMICS_BASE_PACKAGE
-exec "/home/david/simics/simics-6.0.128/bin/addon-manager" --project "/home/david/simics/ODEcam" "$@"
+exec "/home/david/simics/simics-6.0.128/bin/addon-manager" --project "/home/david/simics-projects/ODEcam" "$@"

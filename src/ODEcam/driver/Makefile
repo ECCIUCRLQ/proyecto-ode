@@ -1,19 +1,25 @@
-BINARY   := ODEcam_pci_module
-KERNEL   := /lib/modules/$(shell uname -r)/build
-ARCH     := x86
-C_FLAGS  := -Wall
-KMOD_DIR := $(shell pwd)
+# esta variable contiene el nombre de su driver compilado
+BINARY     := odecam_module
 
-#OBJECTS :=	test_pci.o
+# flags necesarios para compilar el driver 
+KERNEL      := /lib/modules/$(shell uname -r)/build
+ARCH        := x86
+C_FLAGS     := -Wall
+KMOD_DIR    := $(shell pwd)
 
-ccflags-y +=	$(C_FLAGS)
+# nuestro driver es odecam_driver.c
+OBJECTS := odecam_driver.o
 
-obj-m +=	$(BINARY).o
+# todo lo demas queda como esta, no necesita cambios
+ccflags-y += $(C_FLAGS)
 
-$(BINARY)-y :=	#$(OBJECTS)
+obj-m += $(BINARY).o
+
+$(BINARY)-y := $(OBJECTS)
 
 $(BINARY).ko:
-	make -C $(KERNEL) M=$(KMOD_DIR) modules
+		make -C $(KERNEL) M=$(KMOD_DIR) modules
 
 clean:
-	rm -f $(BINARY).ko
+		rm -f $(BINARY).ko
+		rm -f *.o *.cmd *.dwo *.mod *.mod.c *.order *.symvers 

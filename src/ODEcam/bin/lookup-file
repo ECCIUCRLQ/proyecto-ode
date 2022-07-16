@@ -2,8 +2,8 @@
 # this file will be overwritten by the project setup script
 SIMICS_BASE_PACKAGE="/home/david/simics/simics-6.0.128"
 export SIMICS_BASE_PACKAGE
-if [ -f "/home/david/simics/ODEcam/.package-list" ]; then
-    exec "/home/david/simics/simics-6.0.128/bin/lookup-file" --package-list "/home/david/simics/ODEcam/.package-list"  "$@"
+if [ -f "/home/david/simics-projects/ODEcam/.package-list" ]; then
+    exec "/home/david/simics/simics-6.0.128/bin/lookup-file" --package-list "/home/david/simics-projects/ODEcam/.package-list"  "$@"
 else
     exec "/home/david/simics/simics-6.0.128/bin/lookup-file"  "$@"
 fi

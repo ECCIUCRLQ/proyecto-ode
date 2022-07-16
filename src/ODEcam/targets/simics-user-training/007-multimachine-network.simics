@@ -1,2 +1,2 @@
 # Auto-generated file. Any changes will be overwritten!
-run-command-file "/home/david/Desktop/Intel/Simics/simics-6.0.122/../simics-training-6.0.pre26/targets/simics-user-training/007-multimachine-network.simics"
+run-command-file "/home/david/simics/simics-6.0.128/../simics-training-6.0.pre26/targets/simics-user-training/007-multimachine-network.simics"
