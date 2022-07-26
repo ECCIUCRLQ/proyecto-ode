@@ -454,6 +454,45 @@ void write_sample_data(struct pci_dev *pdev)
     iowrite32(data_to_write, pci_capture_data->hwmem + register_offset);
 }
 
+// READ-FROM-DEVICE FUNCTIONS
+
+/*
+    A practical, recyclable way to read from ODEcam device.
+*/
+uint32_t read_from_offset(uint32_t offset) {
+    struct pci_driver_internal_data *pci_capture_data;
+
+    pci_capture_data = (struct pci_driver_internal_data *) pci_get_drvdata(pci_dev);
+
+    return ioread32(pci_capture_data->hwmem + offset);
+}
+
+/*
+    Function to read if the device is powered ON or OFF (1 or 0).
+*/
+uint32_t getDeviceState()
+{
+    return read_from_offset(0x18)
+}
+
+/*
+    Function to get a pointer to an array of ints indicating which filters are selected.
+*/
+uint32_t *getDeviceFilters()
+{
+    uint32_t filterStates[4] = {0,0,0,0};
+
+    filterStates[0] = read_from_offset(0x1C);   // Vintage
+    filterStates[1] = read_from_offset(0x20);   // Blur
+    filterStates[2] = read_from_offset(0x24);   // Negative
+    filterStates[3] = read_from_offset(0x28);   // Black n White
+    
+    return &filterStates;
+}
+
+
+// WRITE-TO-DEVICE FUNCTIONS
+
 /*
     A more practical way to write data to a specific offset.
 */
@@ -495,9 +534,9 @@ int setFilterOptions(uint32_t vintage, uint32_t blur, uint32_t negative, uint32_
 
 
 MODULE_LICENSE("GPL");
-MODULE_AUTHOR("Ernesto Ulate Ramirez <ernesto.ulate.ramirez@intel.com>");
-MODULE_DESCRIPTION("PCI driver to enable communication between ODEcam device and application.");
-MODULE_VERSION("1.1");
+MODULE_AUTHOR("David Sànchez, Oscar Quesada & Esteban Porras");
+MODULE_DESCRIPTION("PCI driver to enable communication between ODEcam device and a user application.");
+MODULE_VERSION("1.2");
 MODULE_DEVICE_TABLE(pci, pci_capture_driver_table);
 
 module_init(init_pci_capture_driver);
