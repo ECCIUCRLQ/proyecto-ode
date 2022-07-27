@@ -470,24 +470,42 @@ uint32_t read_from_offset(uint32_t offset) {
 /*
     Function to read if the device is powered ON or OFF (1 or 0).
 */
-uint32_t getDeviceState()
+uint32_t getDeviceState(void)
 {
-    return read_from_offset(0x18)
+    uint32_t result = read_from_offset(0x18);
+    return result;
 }
 
 /*
-    Function to get a pointer to an array of ints indicating which filters are selected.
+    Function to check the state of the vintage filter option.
 */
-uint32_t *getDeviceFilters()
+uint32_t getFilterVintage(void)
 {
-    uint32_t filterStates[4] = {0,0,0,0};
+    return read_from_offset(0x1C);
+}
 
-    filterStates[0] = read_from_offset(0x1C);   // Vintage
-    filterStates[1] = read_from_offset(0x20);   // Blur
-    filterStates[2] = read_from_offset(0x24);   // Negative
-    filterStates[3] = read_from_offset(0x28);   // Black n White
-    
-    return &filterStates;
+/*
+    Function to check the state of the blur filter option.
+*/
+uint32_t getFilterBlur(void)
+{
+    return read_from_offset(0x20);
+}
+
+/*
+    Function to check the state of the negative filter option.
+*/
+uint32_t getFilterNegative(void)
+{
+    return read_from_offset(0x24);
+}
+
+/*
+    Function to check the state of the B&W filter option.
+*/
+uint32_t getFilterBlackNWhite(void)
+{
+    return read_from_offset(0x28);
 }
 
 

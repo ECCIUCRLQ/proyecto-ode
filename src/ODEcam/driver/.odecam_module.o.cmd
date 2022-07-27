@@ -1,0 +1,1 @@
+cmd_/home/david/Desktop/repos/proyecto-ode/src/ODEcam/driver/odecam_module.o := ld -m elf_x86_64   -r -o /home/david/Desktop/repos/proyecto-ode/src/ODEcam/driver/odecam_module.o /home/david/Desktop/repos/proyecto-ode/src/ODEcam/driver/odecam_driver.o
