@@ -86,11 +86,11 @@ Estos son algunos de los filtros que  se le podrán aplicar a las fotos:
 Es la forma en la que comunica el dispositivo con el driver, se implementará según un consenso de la clase.
 ## ✅ Cosas por hacer
 - [X] Diseño del producto final
-- [ ] Guía de compilación
-- [ ] Como utilizarlo
+- [X] Guía de compilación
+- [X] Como utilizarlo
 - [ ] La especificación formal del dispositivo
 - [ ] El controlador (driver)
-- [ ] Un programa de usuario
+- [X] Un programa de usuario
 - [ ] Pruebas de validación 
 - [ ] Protocolo
 
