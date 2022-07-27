@@ -7,7 +7,7 @@ Este proyecto utiliza la herramienta [Simics](https://www.intel.com/content/www/
 
 ## 🗃️ Tabla de contenidos
 - [Guía de compilación](#-guía-de-compilación)
-- [Como usarlo](#-como-usarlo)
+- [Cómo usarlo](#-cómo-usarlo)
 - [Funcionalidades básicas](#-funcionalidades-básicas)
 - [Protocolo](#-protocolo)
 - [Cosas por hacer](#-cosas-por-hacer)
@@ -15,12 +15,38 @@ Este proyecto utiliza la herramienta [Simics](https://www.intel.com/content/www/
 
 
 ## 📦 Guía de compilación
-Por hacer...
 
+Primeramente es necesario clonar el repositorio:  
+````
+$ git clone https://github.com/ECCIUCRLQ/proyecto-ode.git
+````
+
+### Proyecto de Simics
+Para poder utilizar el proyecto de Simics se deben seguir los pasos de [instalación](https://github.com/ECCIUCRLQ/proyecto-ode/wiki/Simics#instalaci%C3%B3n), una vez hecha la instalación hay que realizar los siguientes pasos:
+* Hacer el project setup
+````
+$ <instalación de simics>/simics-6.0.XXX/bin/project-setup <dirección de este repositorio>/src/ODEcam 
+````
+* Compilar los modulos
+````
+$ cd <dirección de este repositorio>/src/ODEcam/modules
+$ make
+$ make
+````
+
+### Editro de imagenes
+Para compilar el programa editor de imagenes dentro del folder `src/User Program`
+````
+$ make
+````
 
 ## 🚀 Cómo usarlo
-Por hacer...
 
+Para utilizar los filtros solo se ejecuta le programa:
+````
+$ ./program <dirección a la imagen por editar> <nombre de la nueva imagén>
+````
+Luego en el menú elegir el filtro según el numero que muestre.
 
 ## 📷 Funcionalidades básicas
 
