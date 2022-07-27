@@ -28,13 +28,11 @@ Esta cámara virtual empleará el formato de archivo [BMP](https://github.com/EC
 
 ### Filtros 🪟
 
-Estos son los filtros que  se le podrán aplicar a las fotos:
+Estos son algunos de los filtros que  se le podrán aplicar a las fotos:
 
 [normal]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_normal.jpg "Imagen de referencia normal"
 [vintage]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_vintage.jpg "Imagen de referencia con filtro vintage"
-[blur]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_blur.jpg "Imagen de referencia con filtro blur"
 [negativo]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_negativo.jpg "Imagen de referencia con filtro negativo"
-[b&n]: https://github.com/ECCIUCRLQ/proyecto-ode/blob/main/doc/img/imagen_referencia_b%26w.jpg "Imagen de referencia con filtro blanco y negro"
 
 <details>
   <summary>Vintage</summary>
@@ -48,17 +46,6 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
 </details>
 
 <details>
-  <summary>Blur</summary>
-  
-| ![alt text][normal] | ![alt text][blur] |
-|:-------------------:|:-----------------:|
-  
-> Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
-  
-  Este filtro genera un desenfoque artificial en toda la foto.
-</details>
-
-<details>
   <summary>Negativo</summary>
   
 | ![alt text][normal] | ![alt text][negativo] |
@@ -67,18 +54,6 @@ Estos son los filtros que  se le podrán aplicar a las fotos:
 > Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
   
   Con este filtro los blancos son tratados como negros y los negros como blancos.
-</details>
-
-<details>
-  <summary>Blanco y negro</summary>
-  
-| ![alt text][normal] | ![alt text][b&n] |
-|:-------------------:|:----------------:|
-  
-> Las anteriores imágenes no representan el aspecto final del resultado de los filtros que va a aplicar el dispositivo.
-  
-  Este filtro quita el color a las fotos.
-  
 </details>
 
 ## 🧮 Protocolo
