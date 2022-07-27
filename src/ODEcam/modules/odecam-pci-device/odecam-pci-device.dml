@@ -1,0 +1,139 @@
+/*
+  ODEcam PCI Device code
+
+  Authors:	David Sánchez
+			Oscar Quesada
+			Esteban Porras
+
+  This device simulates a digital camera that takes
+  pictures, applies filters to them and saves the output
+  that results from applying those filter to the pictures.
+
+*/
+/*
+  Tags for extracting code into Simics manuals:
+  <add id="odecam-pci-device.dml">
+  <insert-until text="// end of odecam-pci-device.dml"/>
+  </add>
+*/
+
+dml 1.4;
+
+device odecam_pci_device;
+param desc = "ODEcam PCI device";
+param documentation = "This is a camera PCI device.";
+
+import "pci/common.dml";
+is pci_device;
+
+/* Call to C libraries */
+header %{
+	#include <stdio.h>
+	#include <stdlib.h>
+%}
+
+/* Defining external C functions useful for file manipulation */
+extern FILE * fopen(const char *, const char *);
+extern int fgetc(FILE *);
+extern int fclose(FILE *);
+extern typedef struct { } FILE;
+
+/*  */
+session FILE * file;
+
+
+param pci_hotplug = true;
+
+attribute int_attr is uint64_attr "An integer attribute";
+
+/* Handles de input data */
+attribute input
+{
+	//TODO: Adaptar esto a nuestras necesidades (lectura de pixeles)
+
+    param type = "s";   // Input type is string
+    session char* val;  // Value
+    session int len;    // Length
+
+    method get()->(attr_value_t) default 
+    {
+    	return SIM_make_attr_string(val);
+    }
+
+	method set(attr_value_t attr) throws default
+	{
+		local const char* attr_str = SIM_attr_string(attr);
+		set_string(attr_str);
+	}
+
+	method set_string(const char* ptr)
+	{
+		if(len > 0) {delete val;}
+		len = strlen(ptr);
+		val = new char[len + 1];
+		strcpy(val, ptr);
+	}
+}
+
+bank pci_config {
+
+    /* This attribute should contain a list of all BAR registers */
+    param base_address_registers = ["base_address_0"];
+
+    register vendor_id { param init_val = 0x104C; } // Texas Instruments
+    register device_id { param init_val = 0x0DEC; } // ODEcam device id is 0x0DEC
+
+    register base_address_0 @ 0x10 is (memory_base_address_32) {
+        param size_bits = 8;
+        param map_func = 1;
+    }
+	
+}
+
+bank regs is function_mapped_bank {
+    /* We define '1' as our bank's function number */
+    param function = 1;
+
+    param register_size = 4;
+
+    register version @ 0x0010 "Major and minor version" {
+        is read_only;
+        param init_val = 0x4711;
+    }
+
+	register cmd size 4 @ 0x0014 {
+		param init_val = 0;
+		is write;
+		method write(uint64 value) {
+			local int idx = 0;
+			if (value == 0x1) {
+				if (input.val != NULL)
+				{
+					file = fopen(input.val, "r");
+
+					// Buffer limited to 256 bytes
+					for(idx = 0; idx < 256; idx++) 
+					{
+						local uint8 char2read = fgetc(file);
+						buffer[idx].set_val(char2read);
+					}
+					fclose(file);
+				}
+			}
+		}
+	}
+
+    /* ODEcam custom registers */
+    register device_state       @ 0x0018;
+    register filter_vintage     @ 0x001C;
+    register filter_blur        @ 0x0020;
+    register filter_negative    @ 0x0024;
+    register filter_blacknwhite @ 0x0028;
+
+	register buffer[i < 256] size 1 @ 0x002C + i {
+		is read;
+		param init_val = 0;
+	}
+}
+
+// end of odecam-pci-device.dml

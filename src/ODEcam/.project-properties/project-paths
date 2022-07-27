@@ -1,0 +1,4 @@
+project: /home/david/simics-projects/ODEcam
+simics-root: /home/david/simics/simics-6.0.128
+simics-model-builder: /home/david/simics/simics-6.0.128
+mingw: None
